@@ -5,7 +5,8 @@ import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPa
 import { AfterimagePass } from "three/examples/jsm/postprocessing/AfterimagePass.js";
 import { ShaderPass } from "three/examples/jsm/postprocessing/ShaderPass.js";
 import { OutputPass } from "three/examples/jsm/postprocessing/OutputPass.js";
-import { FloraScene, forestConfig, gardenConfig } from "./visual-flora";
+import { FloraScene, gardenConfig } from "./visual-flora";
+import { MyceliumScene } from "./visual-mycelium";
 import { OceanScene } from "./visual-ocean";
 import { NebulaScene } from "./visual-nebula";
 import type { SceneName } from "./visual-names";
@@ -86,7 +87,8 @@ export function createVisualEngine(canvas: HTMLCanvasElement, initial: SceneName
   const build = (name: SceneName): VisualScene => {
     if (name === "ocean") return new OceanScene();
     if (name === "nebula") return new NebulaScene();
-    return new FloraScene(name === "forest" ? forestConfig : gardenConfig);
+    if (name === "forest") return new MyceliumScene();
+    return new FloraScene(gardenConfig);
   };
   const installScene = (name: SceneName): void => {
     if (scene) { world.remove(scene.root); scene.dispose(); }

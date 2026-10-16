@@ -103,9 +103,12 @@ field, and **Full screen** presents only the performance canvas.
 The **Scene** selector (remembered in the browser) chooses a real-time 3D
 world rendered with WebGL2 and Three.js, or the 2D **Neural network**:
 
-- **Bioluminescent forest** — night terrain with shadows and wind-driven
-  grass. Bass grows giant glowing mushrooms, Pad grows fronds, Lead grows
-  flowers, with fireflies and spores.
+- **Mycelial network** — a simulated fungal colony on the forest floor.
+  Hyphal tips wander, seek buried nutrients, branch, avoid their own colony and
+  fuse into loops. Bass seeds or extends a colony, Pad pushes out new hyphae and
+  Lead fires a fast signal; signals travel along the real hyphal graph and light
+  the glowing fruiting bodies they reach. Cutoff sets signal speed, Modulation
+  growth rate, Breath glow.
 - **Deep ocean** — caustics on the sea floor, light shafts, kelp and marine
   snow. Bass, Pad, and Lead release large, medium, and small jellyfish.
 - **Nebula** — fractal gas, a star shell, expanding shock rings and ion
