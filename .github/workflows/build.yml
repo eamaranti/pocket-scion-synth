@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - multi-timbral
+      - sam-voice
   pull_request:
 
 jobs:

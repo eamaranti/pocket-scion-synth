@@ -133,6 +133,7 @@ parameter reference.
 - [Banks, scenes, and parameters](docs/banks-and-parameters.md)
 - [Bass, percussion, and hybrid low lane](docs/low-articulation.md)
 - [Controls, modes, and MIDI](docs/controls.md)
+- [Visual performance engine](docs/visual-engine.md)
 - [USB patch editor](docs/editor.md)
 - [Open editor SysEx protocol](docs/editor-protocol.md)
 - [SAM voice architecture and parameters](docs/sam-voice.md)

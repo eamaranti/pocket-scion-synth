@@ -100,6 +100,37 @@ and pitch bend reshape lifetime, rings, orbit, glow, and centre position. The
 active bank LED colour supplies the palette, so patch changes alter both sound
 and visual character. **Persistence** controls trails, **Clear** resets the
 field, and **Full screen** presents only the performance canvas.
+The **Scene** selector (remembered in the browser) chooses a real-time 3D
+world rendered with WebGL2 and Three.js, or the 2D **Neural network**:
+
+- **Bioluminescent forest** — night terrain with shadows and wind-driven
+  grass. Bass grows giant glowing mushrooms, Pad grows fronds, Lead grows
+  flowers, with fireflies and spores.
+- **Deep ocean** — caustics on the sea floor, light shafts, kelp and marine
+  snow. Bass, Pad, and Lead release large, medium, and small jellyfish.
+- **Nebula** — fractal gas, a star shell, expanding shock rings and ion
+  comets flowing through a noise field.
+- **Dusk garden** — a warm daylight version with trees, ferns, and flowers.
+- **Neural network (2D)** — a bioluminescent tissue of three parallax layers
+  of neurons with dendrites and axons. Each note stimulates a neuron chosen by
+  pitch (left to right) and lane (Bass low, Pad middle, Lead high); the action
+  potential travels along its axons, flares the synaptic terminals, spills
+  neurotransmitter vesicles and, if the target crosses its threshold, fires
+  onward. Cutoff sets pulse speed and reach, resonance lowers the firing
+  threshold and thickens the glow, modulation shimmers dendrites and vesicles,
+  breath raises background activity, and spoken phrases make the tissue fire
+  together while the words drift by. Each instrument position rewires a
+  different network.
+
+In every 3D scene pitch places each organism left to right (low notes left)
+and velocity sets its size. Cutoff opens leaves, petals, and light; resonance
+drives bloom and turbulence; modulation sways and pulses; pitch bend leans
+the wind and camera; breath adds glow and thins the haze; MIDI clock and
+note activity pulse the whole scene. Program changes rotate the palette and the
+bank LED colour tints it. Spoken SAM phrases float through the space as
+glowing words. **Persistence** adds motion trails. The 3D engine loads only
+when this tab is first shown; if WebGL2 is unavailable the tab falls back to
+the Neural network.
 Full-screen mode includes Bank and Instrument selectors and follows hardware
 bank/program changes without replacing the canvas or leaving full screen. Each of the
 sixteen instrument positions has a deliberate scene character controlling form
